@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todoentremanos/static/css/main.caa87b24.css",
+    "main.js": "/todoentremanos/static/js/main.8c89a3dd.js",
+    "index.html": "/todoentremanos/index.html",
+    "main.caa87b24.css.map": "/todoentremanos/static/css/main.caa87b24.css.map",
+    "main.8c89a3dd.js.map": "/todoentremanos/static/js/main.8c89a3dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caa87b24.css",
+    "static/js/main.8c89a3dd.js"
+  ]
+}

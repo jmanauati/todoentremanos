@@ -3,17 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 10dvh;
-    background-color: #48e;
-    
-
+    height: 15dvh;
+    background-color: #6f826c;
 }
+
+.logoInicio{
+    height: inherit;
+    margin-left: 10px;
+}
+
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -208,4 +213,117 @@ button{
     font-weight: bold;
     cursor: pointer;
     outline: none;
+}
+.inicio{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.portada-principal{
+    background-image: url('imagenes/pottery-inicio.jpg');
+    height: 100dvh;
+    object-fit: cover;
+    opacity: 1.6;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto-portada{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 30px;
+    align-items: center;
+    margin: 70px 20px;
+}
+
+.boton-productos{
+    background-color: #000;
+    opacity: 0.5;
+    margin: 70px 20px;
+    color: #fff;
+    border: 2px #fff solid;
+    width: 130px;
+    padding: 10px;
+}
+
+.destacados{
+    margin: 30px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.destacado{
+    color: #6f826c;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.destacado i{
+    color: #000;
+}
+.foto-torno{
+    background-image: url('imagenes/torno.jpg');
+    height: 200px;
+    opacity: 0.9;
+}
+
+.titulo-categorias{
+    color: #6f826c;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: center;
+}
+
+.tarjetas-categorias{
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    gap: 20px;
+    align-self: center;
+}
+
+.contenedor-tarjeta{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 40vw;
+    max-width: 200px;
+    margin: 20px;
+}
+
+.contenedor-tarjeta img{
+    height: auto;
+    margin: 0;
+}
+.contenedor-tarjeta button{
+    margin: 0;
+    border-radius: 0;
+    width: inherit;
+    max-width: 200px;
+    border: 2px solid white;
+    background-color: #6f826c;
+}
+
+.footer{
+    background-color: #000;
+    height: 30dvh;
+
+}
+
+.iconos-footer {
+    color: #fff;
+    margin: 10px;
+}
+
+.logo-instagram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    margin: 10px;
+}
+
+.logo-instagram p{
+    text-decoration: none;
+    color: white;
 }

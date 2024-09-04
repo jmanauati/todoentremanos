@@ -10,6 +10,7 @@ import { CartContext, CartProvider } from './context/CartContext';
 import { useState } from 'react';
 import Carrito from './componentes/Carrito';
 import Checkout from './componentes/Checkout';
+import Inicio from './componentes/Inicio';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path='/' element={<ItemListContainer />}  />
+          <Route path='/' element={<Inicio />}  />
           <Route path='productos/item/:id' element={<ItemDetailContainer />}  />
           <Route path='item/:id' element={<ItemDetailContainer />}  />
           <Route path='/nosotros' element={<Nosotros />}  />

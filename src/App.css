@@ -1,3 +1,7 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -52,7 +56,7 @@ h2{
     align-items: center;
     padding: 20px;
     margin: 1% 40%;
-    color: #48e;
+    color: #6f826c;
     font-size: 30px;
     font-weight: 100;
 }
@@ -61,14 +65,14 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 10px;
+    background-color: #e0ecde;
 
 }
 
 /* ITEM */
 
 .producto-item{
-    background-color: rgb(205, 160, 196);
-    min-width: 300px;
+    background-color: #6f826c;
     border-radius: 10px;
     padding: 0 0 5px 0;
     margin: 10px;
@@ -106,7 +110,7 @@ padding: 5px;
     color: black;
     font-weight: 700;
     padding: 5px;
-    background-color: #bd4fe1;
+    background-color: #fff;
     border-radius: 10px;
     margin: 10px;
 }
@@ -220,31 +224,45 @@ button{
     flex-direction: column;
 }
 .portada-principal{
-    background-image: url('imagenes/pottery-inicio.jpg');
+    background-image: url('imagenes/FondoInicio.jpeg');
+    background-size: cover;
     height: 100dvh;
     object-fit: cover;
-    opacity: 1.6;
+    opacity: .7;
     display: flex;
     flex-direction: column;
     
 }
+.portada-principal::after {
+    content: '';
+    position: absolute;
+    top: 15dvh;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    background-color: #6f826c;
+    opacity: 0.4;
+    background-size: cover;
+
+  }
 
 .texto-portada{
     color: #fff;
-    font-family: sans-serif;
-    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
     align-items: center;
     margin: 70px 20px;
 }
 
 .boton-productos{
-    background-color: #000;
-    opacity: 0.5;
+    background-color: #485a46;
+    border-radius: 10px;
     margin: 70px 20px;
     color: #fff;
     border: 2px #fff solid;
-    width: 130px;
+    width: 10rem;
     padding: 10px;
+    z-index: 40;
 }
 
 .destacados{
@@ -266,6 +284,7 @@ button{
 .foto-torno{
     background-image: url('imagenes/torno.jpg');
     height: 200px;
+    background-size: cover;
     opacity: 0.9;
 }
 
@@ -277,9 +296,10 @@ button{
 
 .tarjetas-categorias{
     display: grid;
-    grid-template-columns: 0fr 0fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-self: center;
+    padding-bottom: 100px;
 }
 
 .contenedor-tarjeta{
@@ -305,8 +325,12 @@ button{
 }
 
 .footer{
-    background-color: #000;
-    height: 30dvh;
+    background-color: #444;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -326,4 +350,44 @@ button{
 .logo-instagram p{
     text-decoration: none;
     color: white;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-footer{
+    margin: 10px;
+    color: #fff;
+}
+
+.logo-footer{
+    height: 100px;
+}
+
+.reviews-carousel {
+height: auto;
+width: 100%;
+margin: 0 auto;
+text-align: center;
+background-color: #fff;
+margin-bottom: 40px;
+}
+
+.review {
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 10px;
+}
+
+.slick-dots li button:before {
+  color: #3dba2a; /* Cambia el color de los puntos de navegación */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #6f826c; /* Cambia el color de las flechas */
 }
